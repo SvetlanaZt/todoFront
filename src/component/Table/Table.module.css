@@ -1,0 +1,60 @@
+.checkbox_off,
+.checkbox_on {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms;
+    border: 1px solid black;
+}
+
+.checkbox_on {
+    color: white;
+    background-color: rgb(53, 53, 248);
+}
+.tableBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableCell {
+    padding: 10px 25px;
+    width: 80px;
+}
+.tableHeader{
+    background-color: rgb(226, 219, 219);
+}
+
+.table{
+        display: flex;
+        flex-direction: column;
+}
+.description, .title{
+    max-width: 100px;
+    -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+}
+.items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+    background-color: rgb(180, 177, 177);}
+
+.description{
+    width: 100px;
+}
+.title{
+    width: 80px;
+}
+.cell{
+    width: 20px;
+}

@@ -1,0 +1,23 @@
+.blockForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+.form{
+    display: flex;
+}
+.label {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+.input{
+    margin-top: 10px;
+    height: 25px;
+}
+.buttonCreate{
+    margin-left: 20px;
+    height: 30px;
+    margin-top: auto;
+}
