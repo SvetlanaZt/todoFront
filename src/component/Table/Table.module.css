@@ -16,6 +16,9 @@
     color: white;
     background-color: rgb(53, 53, 248);
 }
+.checkbox_off{
+background-color: white;
+}
 .tableBlock {
     display: flex;
     justify-content: center;

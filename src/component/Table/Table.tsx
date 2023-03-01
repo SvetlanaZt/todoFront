@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { SyntheticEvent, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { setChangeComplited } from "../../redux/slice/slice";
 import { IData } from "../../redux/slice/type";
@@ -7,14 +7,13 @@ import s from "./Table.module.css";
 
 const Table = () => {
   const [isModal, setIsModal] = useState(false);
-  const [currentId, setCurrentId] = useState("");
-  console.log(currentId);
+  const [currentId, setCurrentId] = useState(1);
 
   const data = useAppSelector((state) => state?.todo?.data);
   const dispatch = useAppDispatch();
   const handleCancel = () => setIsModal(false);
 
-  const onClick = (id: any, e: any) => {
+  const onClick = (id: number, e: SyntheticEvent<EventTarget>) => {
     setCurrentId(id);
     setIsModal(true);
   };
@@ -45,7 +44,6 @@ const Table = () => {
               <td className={s.cell}>{todo?.id}</td>
               <td className={s.title}>{todo?.title}</td>
               <td className={s.description}>{todo?.description}</td>
-              {/* <td>{todo?.status}</td> */}
               <td
                 onClick={(e) => onClickCompleted(todo, e)}
                 className={todo?.status ? s.checkbox_on : s.checkbox_off}

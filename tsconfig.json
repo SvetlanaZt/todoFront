@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "noEmitOnError": false,
-    "noImplicitAny": false,
+    // "noImplicitAny": false,
     "lib": [
       "dom",
       "dom.iterable",
